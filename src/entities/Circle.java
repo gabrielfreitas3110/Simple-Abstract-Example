@@ -1,23 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package entities;
 
 import entities.enums.Color;
 
-/**
- *
- * @author Gabriel Augusto
- */
-public class Circle extends Shape {
-
-    private Double radius;
-
-    public Circle() {
-        super();
-    }
+public class Circle extends AbstractShape{
+	
+	private Double radius;
 
     public Circle(Double radius, Color color) {
         super(color);
@@ -36,5 +23,4 @@ public class Circle extends Shape {
     public double area() {
         return Math.PI*radius*radius;
     }
-    
 }

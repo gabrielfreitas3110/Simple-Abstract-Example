@@ -1,30 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package application;
 
-import entities.Circle;
+import entities.enums.Color;
 import entities.Rectangle;
 import entities.Shape;
-import entities.enums.Color;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-/**
- *
- * @author Gabriel Augusto
- */
+import entities.Circle;
+
 public class Program {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         List<Shape> list = new ArrayList<>();
         
@@ -61,5 +50,4 @@ public class Program {
         
         sc.close();
     }
-    
 }
